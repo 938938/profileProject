@@ -1,7 +1,16 @@
-const Main = () => {
-  return (
-    <div>Main</div>
-  )
-}
+import { SectionsContainer, Section } from 'react-fullpage';
 
-export default Main
+const Main = () => {
+  let options = {
+    anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
+  };
+  return (
+    <SectionsContainer {...options}>
+      <Section>Page 1</Section>
+      <Section>Page 2</Section>
+      <Section>Page 3</Section>
+    </SectionsContainer>
+  );
+};
+
+export default Main;
