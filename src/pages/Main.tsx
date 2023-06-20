@@ -1,14 +1,19 @@
 import { SectionsContainer, Section } from 'react-fullpage';
+import One from '../components/Main/One';
+import Two from '../components/Main/Two';
 
 const Main = () => {
   let options = {
-    anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
+    anchors: ['sectionOne', 'sectionTwo'],
   };
   return (
     <SectionsContainer {...options}>
-      <Section>Page 1</Section>
-      <Section>Page 2</Section>
-      <Section>Page 3</Section>
+      <Section>
+        <One />
+      </Section>
+      <Section>
+        <Two />
+      </Section>
     </SectionsContainer>
   );
 };
