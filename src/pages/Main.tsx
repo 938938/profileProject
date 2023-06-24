@@ -4,7 +4,7 @@ import Two from '../components/Main/Two';
 
 const Main = () => {
   let options = {
-    anchors: ['sectionOne', 'sectionTwo'],
+    anchors: ['profile', 'project'],
   };
   return (
     <SectionsContainer {...options}>
