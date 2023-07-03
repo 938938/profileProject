@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Profile from './pages/Profile';
 import Project from './pages/Project';
 import Contents from './layout/Contents';
+import NotPage from './pages/NotPage';
 
 export const routers: RemixRouter = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const routers: RemixRouter = createBrowserRouter([
       {
         path: '/project',
         element: <Project />,
+      },
+      {
+        path: '/*',
+        element: <NotPage />,
       },
     ],
   },
