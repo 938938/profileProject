@@ -31,6 +31,7 @@ export const GnbBtn = styled.button`
   background-color: ${CustomGray};
   &:hover {
     color: ${CustomRed};
+    background-color: white;
   }
   z-index: 99;
 `;

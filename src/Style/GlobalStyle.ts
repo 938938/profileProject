@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { CustomGray, CustomNavy } from './Color';
 
 // rest 라이브러리 import해도 됨!
 
@@ -40,6 +41,16 @@ button{
 	cursor: pointer;
 	background-color:transparent;
 	border:0;
+	width: 100px;
+  height: 40px;
+  border: 1px solid ${CustomGray};
+  background-color: ${CustomGray};
+  border-radius: 10px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: ${CustomNavy};
+    color: ${CustomGray};
+  }
 }
 u {
     text-decoration: underline;

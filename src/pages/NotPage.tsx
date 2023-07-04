@@ -26,16 +26,4 @@ const Caution = styled.div`
   * {
     margin: 10px;
   }
-  button {
-    width: 100px;
-    height: 40px;
-    border: 1px solid ${CustomGray};
-    background-color: ${CustomGray};
-    border-radius: 10px;
-    transition: all 0.3s;
-    &:hover {
-      background-color: ${CustomNavy};
-      color: ${CustomGray};
-    }
-  }
 `;
